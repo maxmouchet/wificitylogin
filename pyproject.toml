@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wificitylogin"
+version = "0.1.0"
+description = ""
+authors = ["Maxime Mouchet <max@maxmouchet.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+beautifulsoup4 = "^4.9.3"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.12.1"
+
+[tool.poetry.scripts]
+wificitylogin = 'wificitylogin:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
