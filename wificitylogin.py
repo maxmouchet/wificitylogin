@@ -16,7 +16,7 @@ DETECT_URL = "http://detectportal.firefox.com"
 TIMEOUT = 1
 
 logger = logging.getLogger("wificitylogin")
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def main():

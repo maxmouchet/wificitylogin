@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wificitylogin"
-version = "0.1.0"
+version = "0.1.1"
 description = "Automated login to the CIUP's Ethernet and Wi-Fi networks."
 authors = ["Maxime Mouchet <max@maxmouchet.com>"]
 license = "MIT"
