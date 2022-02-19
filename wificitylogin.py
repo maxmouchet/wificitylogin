@@ -1,4 +1,5 @@
 import logging
+import sys
 from configparser import ConfigParser
 from pathlib import Path
 
@@ -14,14 +15,17 @@ CONFIG = Path.home() / ".wificity"
 DETECT_URL = "http://detectportal.firefox.com"
 TIMEOUT = 1
 
+logger = logging.getLogger("wificitylogin")
+__version__ = "0.1.0"
+
 
 def main():
     logging.basicConfig(level=logging.DEBUG)
-    logger = logging.getLogger("wificitylogin")
+    logger.info("Version %s", __version__)
 
     if not CONFIG.exists():
         logger.error("%s not found", CONFIG)
-        return
+        sys.exit(1)
 
     config = ConfigParser()
     config.read(CONFIG)
